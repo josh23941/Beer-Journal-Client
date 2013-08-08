@@ -22,6 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.jmiller.brewjournal.SecondActivity"
+            android:label="@string/title_activity_second" 
+            android:parentActivityName="com.jmiller.brewjournal.MainActivity">
+            	<meta-data
+            	    android:name="android.support.PARENT_ACTIVITY"
+            	    android:value="com.jmiller.brewjournal.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>
