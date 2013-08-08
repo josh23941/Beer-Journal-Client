@@ -23,12 +23,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.jmiller.brewjournal.SecondActivity"
-            android:label="@string/title_activity_second" 
+            android:name="com.jmiller.brewjournal.NewBrewday"
+            android:label="@string/title_activity_new_brewday" 
             android:parentActivityName="com.jmiller.brewjournal.MainActivity">
-            	<meta-data
-            	    android:name="android.support.PARENT_ACTIVITY"
-            	    android:value="com.jmiller.brewjournal.MainActivity"/>
         </activity>
     </application>
 
