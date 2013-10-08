@@ -18,4 +18,9 @@
         android:layout_height="wrap_content"
         android:text="@string/edit_existing_brewday"
         android:onClick="editBrewDay" />
+    <Spinner
+        android:id="@+id/edit_brew_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
 </LinearLayout>

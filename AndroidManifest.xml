@@ -24,13 +24,17 @@
         </activity>
         <activity
             android:name="com.jmiller.brewjournal.NewBrewday"
-            android:label="@string/title_activity_new_brewday" 
-            android:parentActivityName="com.jmiller.brewjournal.MainActivity">
+            android:label="@string/title_activity_new_brewday"
+            android:parentActivityName="com.jmiller.brewjournal.MainActivity" >
         </activity>
         <activity
             android:name="com.jmiller.brewjournal.SecondActivity"
-            android:parentActivityName="com.jmiller.brewjournal.SecondAcitivy"
-            android:label="@string/title_activity_second_activity">
+            android:label="@string/title_activity_second_activity"
+            android:parentActivityName="com.jmiller.brewjournal.SecondAcitivy" >
+        </activity>
+        <activity
+            android:name="com.jmiller.brewjournal.EditBrew"
+            android:label="@string/title_activity_edit_brew" >
         </activity>
     </application>
 

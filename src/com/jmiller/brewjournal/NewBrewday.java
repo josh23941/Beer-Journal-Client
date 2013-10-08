@@ -1,9 +1,7 @@
 package com.jmiller.brewjournal;
 
 import com.jmiller.brewjournal.util.CalendarUtils;
-import com.jmiller.brewjournal.persistance.BrewJournalOpenHelper;
 import com.jmiller.brewjournal.persistance.BrewdayDAO;
-
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -19,10 +17,8 @@ public class NewBrewday extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_new_brewday);
-		
 		datasource = new BrewdayDAO(this);
 		datasource.open();
-		
 		EditText editText = (EditText)findViewById(R.id.new_brewday_date_field);
 		editText.setText(CalendarUtils.getCurrentDateFormatted());
 	}
@@ -34,18 +30,20 @@ public class NewBrewday extends Activity {
 		return true;
 	}
 	
+	private void nextActivity(){
+		Intent intent = new Intent(this, SecondActivity.class);
+		startActivity(intent);
+	}
+	
 	public void saveBrewday(View view){
 		//Check that the name is not null
 		EditText beerNameEditText = (EditText)findViewById(R.id.new_brewday_beer_name_field);
 		String beerNameString = beerNameEditText.getText().toString();
-		//add all cases of empty or all spaces check...
-		if ((!beerNameString.equals("")) && (beerNameString != null)){
-			//Database ops
+		if (!(beerNameString.trim().length() == 0) && (beerNameString != null)){
+			//insert name into database and goto next activity
 			datasource.insertBrewday(beerNameString);
-			//goto next view << write separate method but call here I think is best
-			Intent intent = new Intent(this, SecondActivity.class);
 			datasource.close();
-			startActivity(intent);
+			nextActivity();
 		}else{
 			//fire a toast and don't goto next activity
 			Toast toast = Toast.makeText(getApplicationContext(), "Enter A Name", Toast.LENGTH_SHORT);

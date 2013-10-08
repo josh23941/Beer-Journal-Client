@@ -24,11 +24,12 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090004;
-        public static final int new_brewday_beer_name_field=0x7f090003;
-        public static final int new_brewday_beer_name_label=0x7f090002;
-        public static final int new_brewday_date_field=0x7f090001;
-        public static final int new_brewday_date_label=0x7f090000;
+        public static final int action_settings=0x7f090005;
+        public static final int edit_brew_spinner=0x7f090000;
+        public static final int new_brewday_beer_name_field=0x7f090004;
+        public static final int new_brewday_beer_name_label=0x7f090003;
+        public static final int new_brewday_date_field=0x7f090002;
+        public static final int new_brewday_date_label=0x7f090001;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -36,9 +37,10 @@ public final class R {
         public static final int activity_second=0x7f030002;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
-        public static final int new_brewday=0x7f080001;
-        public static final int second=0x7f080002;
+        public static final int edit_brew=0x7f080000;
+        public static final int main=0x7f080001;
+        public static final int new_brewday=0x7f080002;
+        public static final int second=0x7f080003;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
@@ -46,16 +48,18 @@ public final class R {
          */
         public static final int app_name=0x7f060000;
         public static final int edit_existing_brewday=0x7f060003;
+        public static final int hello_world=0x7f06000a;
         public static final int new_brewday_beer_name_label_text=0x7f060006;
         public static final int new_brewday_date_label_text=0x7f060005;
         public static final int new_brewday_save_button_text=0x7f060007;
         /**  main screen 
          */
         public static final int start_brewday=0x7f060002;
+        public static final int title_activity_edit_brew=0x7f060009;
         /**  new brew day 
          */
         public static final int title_activity_new_brewday=0x7f060004;
-        /**   activity_second 
+        /**  activity_second 
          */
         public static final int title_activity_second_activity=0x7f060008;
     }
