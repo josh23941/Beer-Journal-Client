@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class SecondActivity extends Activity {
 	
-	
+
 	 @SuppressLint("NewApi")
 	    @Override
 	    protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class SecondActivity extends Activity {
 	            getActionBar().setDisplayHomeAsUpEnabled(true);
 	        }
 	        Intent intent = getIntent();
-	        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+	        String message = intent.getStringExtra("jfkal;fdchhahahahahahaha");
 	        TextView textView = new TextView(this);
 	        textView.setTextSize(40);
 	        textView.setText(message);

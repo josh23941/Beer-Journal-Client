@@ -13,5 +13,8 @@
     	<string name="title_activity_new_brewday">New Brewday</string>
     	<string name="new_brewday_date_label_text">Brew Date:</string>
     	<string name="new_brewday_beer_name_label_text">Brew Name:</string>
-    	
+    	<string name="new_brewday_save_button_text">Save</string>
+    <!--  activity_second -->
+    	<string name="title_activity_second_activity">Second Activity</string>
+    	    	
 </resources>
